@@ -44,7 +44,7 @@ jobs:
       - name: run ls command
         run: ls -lah
       - name: Run custom script
-        run: ./echo_scropt.sh
+        run: ./echo_script.sh
 
       - name: Run a multi-line script
         run: |
