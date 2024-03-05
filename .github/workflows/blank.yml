@@ -11,16 +11,15 @@ on:
 jobs:
   check_rum:
     runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v3
-    - name: check rum
-      run: chmod +x ./RAM_memory.sh && sh ./RAM_memory.sh
-    - name: finally
-      run: echo "Finally"
+    steps:
+      - uses: actions/checkout@v3
+      - name: check rum
+        run: chmod +x ./RAM_memory.sh && sh ./RAM_memory.sh
+      - name: finally
+        run: echo "Finally"
 
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
 
