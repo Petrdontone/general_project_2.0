@@ -1,1 +1,0 @@
-echo "Olya 2"
