@@ -52,6 +52,10 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
+  tanya_tests:
+    runs-on: ubuntu-latest
+    needs: build
+
   test_katya_skript:
     runs-on: ubuntu-latest
     needs:
