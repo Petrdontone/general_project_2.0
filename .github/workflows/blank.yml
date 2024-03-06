@@ -63,4 +63,13 @@ jobs:
       - name: run katya skript
         run: sh echo_katya.sh
 
+  olya_skript:
+    runs-on: ubuntu-latest
+    needs:
+     - build
+     - autotests
+    steps:
 
+      - uses: actions/checkout@v3
+      - name: run olya skript
+        run: sh olya_echo.sh
