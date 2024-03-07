@@ -96,7 +96,7 @@ jobs:
         run: bash masha_script.sh
 
   rustam_script:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     needs:
       - build
       - autotests
