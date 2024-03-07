@@ -85,6 +85,20 @@ jobs:
       - name: run tanya_scr.sh
         run: sh tanya_scr.sh
 
+  vova_RAM_memory_script:
+    runs-on: ubuntu-latest
+    needs: 
+     - build
+     - autotests
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: run RAM_memory_script for windowds
+        run: bash RAM_memory.sh
+
+      - name: run RAM_memory_script for MacOS
+        run: bash RAM_memory_for_macOS.sh 
+
   masha_script:
     runs-on: ubuntu-latest
     needs:
