@@ -96,7 +96,6 @@ jobs:
       - name: run masha_script.sh
         run: bash masha_script.sh
 
-
   rustam_script:
     runs_on: ubuntu-latest
     needs:
@@ -104,6 +103,6 @@ jobs:
       - autotests
     steps:
 
-      -uses: actions/checkout@v3
-      -name: rustams script
-      run: sh rustam_script.sh
+      - uses: actions/checkout@v3
+      - name: rustams script
+        run: sh rustam_script.sh
