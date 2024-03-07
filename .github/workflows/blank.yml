@@ -89,7 +89,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: 
      - build
-     - autotest
+     - autotests
     steps:
       - uses: actions/checkout@v3
 
