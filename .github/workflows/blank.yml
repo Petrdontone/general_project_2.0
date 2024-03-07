@@ -97,4 +97,4 @@ jobs:
         run: bash RAM_memory.sh
 
       - name: run RAM_memory_script for MacOS
-        run: bash RAM_memory_script_for_macOS.sh 
+        run: bash RRAM_memory_for_macOS.sh 
