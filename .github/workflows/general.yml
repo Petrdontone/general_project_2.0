@@ -69,7 +69,6 @@ jobs:
      - build
      - autotests
     steps:
-
       - uses: actions/checkout@v3
       - name: run olya skript
         run: sh olya_echo.sh
@@ -97,7 +96,7 @@ jobs:
         run: bash masha_script.sh
 
   rustam_script:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     needs:
       - build
       - autotests
